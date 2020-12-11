@@ -41,5 +41,11 @@ public void keyPressed()
     bob.accelerate(0.3);
   }else if(key == 'h'){
     bob.hyperspace();
+  }else if(key == 'r'){
+    bob.restart();
+    for(int i = 0; i < 15; i++)
+    {
+    asteroids.add(new Asteroid());
+    }
   }
 }
