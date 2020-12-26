@@ -29,7 +29,7 @@ public void draw()
     asteroids.get(i).move();
     for(int j = 0; j < bullets.size(); j++)
     {
-      if(dist((float)bullets.get(j).getX(), (float)bullets.get(j).getY(), (float)asteroids.get(i).getX(), (float)asteroids.get(i).getY()) < 20){
+      if(dist((float)bullets.get(j).getX(), (float)bullets.get(j).getY(), (float)asteroids.get(i).getX(), (float)asteroids.get(i).getY()) < 30){
         asteroids.remove(i);
         bullets.remove(j);
         break;
